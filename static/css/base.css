@@ -3,8 +3,47 @@ body{
 font-family: 'Poppins', sans-serif;
 }
 
+
+/*  --------------- Base.html ---------------- */
 .logo{
     width:76px;
     height: auto;
 }
 
+.young-minds-logo{
+    width: 130px;
+    height: auto;
+}
+
+.nav-item{
+    display: inline;
+}
+
+ul .nav{
+    width: fit-content;
+}
+
+.horizontal-list{
+    width : 100%;
+    text-align: center;
+}
+.horizontal-list li{
+    display: inline;
+}
+
+a{
+    color:#000;
+}
+
+a:hover{
+    color: rgb(71,218,202);
+}
+
+.footer-info{
+    font-weight: 600;
+    font-size: 18px;
+    word-wrap: normal;
+}
+.text-cyan{
+    color: rgb(71,218,202); 
+}
