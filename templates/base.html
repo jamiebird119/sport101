@@ -37,44 +37,116 @@
 
     <nav class="navbar nav  justify-content-between p-0">
         <div class="row no-gutters justify-content-center w-100">
-            <div class="col-1 d-none d-lg-inline-block text-center">
-                <a class="navbar-brand mt-4 pt-4">
+            <div class="col-xl-1 d-none d-xl-inline-block text-center">
+                <a class="navbar-brand mt-4 pt-4 ml-1">
                     <img class="young-minds-logo" src="{{ MEDIA_URL }}logos/YoungMindsLogo.webp">
                 </a>
             </div>
-            <div class="col-10 text-center">
-                <a class="navbar-brand" href="{% url 'home' %}">
-                    <img class="logo" src="{{ MEDIA_URL }}logos/101logo.png" />
-                </a>
-                <ul class="nav justify-content-center list-unstyled mb-2">
-                    <li class="nav-item  mx-auto">
-                        <a class="nav-link" href="#"><strong>2021 Acadamies</strong> </a>
-                    </li>
-                    <li class="nav-item  mx-auto">
-                        <a class="nav-link" href="#"><strong>Drag flick coaching</strong> </a>
-                    </li>
-                    <li class="nav-item  mx-auto">
-                        <a class="nav-link" href="#"><strong>The101Show</strong> </a>
-                    </li>
-                    <li class="nav-item  mx-auto">
-                        <a class="nav-link" href="#"><strong>101Store</strong> </a>
-                    </li>
-                    <li class="nav-item  mx-auto">
-                        <a class="nav-link" href="#"><strong>Partners</strong> </a>
-                    </li>
-                    <li class="nav-item  mx-auto">
-                        <a class="nav-link" href="#"><strong>Our Story</strong> </a>
-                    </li>
-                    <li class="nav-item  mx-auto">
-                        <a class="nav-link" href="#"><strong>Contact</strong> </a>
-                    </li>
-                </ul>
+            <div class="d-none d-md-inline-block col-xl-10 text-center">
+                <div class="row">
+                    <div class="col-md-4 d-none d-md-block d-lg-none">
+                        <a class="navbar-brand mt-4">
+                            <img class="young-minds-logo" src="{{ MEDIA_URL }}logos/YoungMindsLogo.webp">
+                    </a>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-12 text-center">
+                        <a class="navbar-brand" href="{% url 'home' %}">
+                            <img class="logo" src="{{ MEDIA_URL }}logos/101logo.png" />
+                        </a>
+                    </div>
+                    <div class="col-md-4 d-none d-md-block d-lg-none">
+                        <a class="navbar-brand mt-4 text-cyan" href="#"><i class="text-black fas fa-user-circle"></i> Log In </a>
+                    </div>
+                    <div class="col-12">
+                        <ul class="nav justify-content-center list-unstyled mb-2 d-none d-md-flex">
+                            <li class="nav-item  mx-auto">
+                                <a class="nav-link text-black" href="#"><strong>2021 Acadamies</strong> </a>
+                            </li>
+                            <li class="nav-item  mx-auto">
+                                <a class="nav-link text-black" href="#"><strong>Drag flick coaching</strong> </a>
+                            </li>
+                            <li class="nav-item  mx-auto">
+                                <a class="nav-link text-black" href="#"><strong>The101Show</strong> </a>
+                            </li>
+                            <li class="nav-item  mx-auto">
+                                <a class="nav-link text-black" href="#"><strong>101Store</strong> </a>
+                            </li>
+                            <li class="nav-item  mx-auto">
+                                <a class="nav-link text-black" href="#"><strong>Partners</strong> </a>
+                            </li>
+                            <li class="nav-item  mx-auto">
+                                <a class="nav-link text-black" href="#"><strong>Our Story</strong> </a>
+                            </li>
+                            <li class="nav-item  mx-auto">
+                                <a class="nav-link text-black" href="#"><strong>Contact</strong> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="col-1 d-none d-lg-block text-center">
-                <a class="navbar-brand mt-4 pt-4" href="#"><i class="fas fa-user-circle"></i> Log In </a>
+            <div class="col-xl-1 d-none d-xl-block text-center">
+                <a class="navbar-brand mt-4 pt-4 text-cyan" href="#"><i class="text-black fas fa-user-circle"></i> Log In </a>
             </div>
         </div>
     </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-md-none d-block">
+        <div class="row w-100 mx-auto">
+            <div class="col-4 text-center">
+                <a class="navbar-brand mt-3">
+                    <img class="young-minds-logo" src="{{ MEDIA_URL }}logos/YoungMindsLogo.webp">
+                </a>
+            </div>
+            <div class="col-4 text-center">
+                <a class="navbar-brand" href="{% url 'home' %}">
+                    <img class="logo" src="{{ MEDIA_URL }}logos/101logo.png" />
+                </a>
+            </div>
+            <div class="col-4 text-center">
+                <button class="navbar-toggler mt-4" type="button" onclick="openNav()">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="col-4 offset-8 text-center">
+                <a class="text-cyan" href="#"><i class="text-black fas fa-user-circle fa-lg"></i>  Log In </a>
+            </div>
+        </div>
+        
+            
+       
+    </nav>
+    <div id="myNav" class="overlay" style="background-image: url('{{MEDIA_URL}}logos/menu bg.webp');">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <ul class="nav d-block">
+                    <li class="nav-item  mx-auto ">
+                            <a class="nav-link" href="#"><strong>2021 Acadamies</strong> </a>
+                        </li>
+                        <li class="nav-item  mx-auto">
+                            <a class="nav-link" href="#"><strong>Drag flick coaching</strong> </a>
+                        </li>
+                        <li class="nav-item  mx-auto">
+                            <a class="nav-link" href="#"><strong>The101Show</strong> </a>
+                        </li>
+                        <li class="nav-item  mx-auto">
+                            <a class="nav-link" href="#"><strong>101Store</strong> </a>
+                        </li>
+                        <li class="nav-item  mx-auto">
+                            <a class="nav-link" href="#"><strong>Partners</strong> </a>
+                        </li>
+                        <li class="nav-item  mx-auto">
+                            <a class="nav-link" href="#"><strong>Our Story</strong> </a>
+                        </li>
+                        <li class="nav-item  mx-auto">
+                            <a class="nav-link" href="#"><strong>Contact</strong> </a>
+                        </li>
+                </ul>
+            </div>
+
+    </div>
 
     {% if messages %}
     <div class="message-container">
@@ -105,8 +177,8 @@
     </div>
     <footer>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="row w-100 mt-4">
-                <div class="col-3">
+            <div class="row w-100 mt-4 mx-auto">
+                <div class="col-12 col-md-6 col-lg-3">
                     <ul class="nav justify-content-center list-unstyled mb-2">
                         <li class="nav-item  mx-auto text-center w-75">
                             <img src="{{MEDIA_URL }}logos/Full_colour_darkBG.webp">
@@ -127,7 +199,7 @@
                         </li>
 
                 </div>
-                <div class="col-3 text-center">
+                <div class="col-12 col-md-6 col-lg-3 text-center">
                     <h3 class="text-cyan my-4"> Links </h4>
                         <ul class="nav justify-content-center list-unstyled mb-2 d-block">
                             <li class="nav-item  mx-auto">
@@ -147,7 +219,7 @@
                             </li>
                         </ul>
                 </div>
-                <div class="col-3 text-center">
+                <div class="col-12 col-md-6 col-lg-3 text-center">
                     <h3 class="text-cyan my-4">
                         Where to find us
                     </h3>
@@ -170,7 +242,7 @@
                         <a href="#"><img class="logo" src="{{MEDIA_URL}}logos/networklogo.webp" /> </a>
                     </h3>
                 </div>
-                <div class="col-3 text-center">
+                <div class="col-12 col-md-6 col-lg-3 text-center">
                     <h3 class="text-cyan my-4">
                         Sponsors
                     </h3>
@@ -189,7 +261,8 @@
         </nav>
     </footer>
     {% block postloadjs %}
-
+    <script src="{% static 'js/mobile-nav.js' %}" type="text/javascript"></script>
+    
     {% endblock %}
 </body>
 
