@@ -1,6 +1,45 @@
 {% extends 'base.html' %}{% load static %}
 
+{% block extra_js%}
+<script src="{% static 'js/parallax.min.js' %}" type="text/javascript"></script>
+{% endblock %}
 {% block content %}
-This is the home page!
+<div class="row no-gutters">
+    <div class="d-none d-md-block col-md-4">
+        <img class="hero-image" src="{{MEDIA_URL}}images/hero1.webp">
+    </div>
+    <div class="hero-image hero-parallax col-md-4 parallax-window text-center" data-position-y="3px " data-parallax="scroll" data-image-src="{{MEDIA_URL}}images/hero2.webp">
+    </div>
+    <div class="d-none d-md-block col-md-4">
+        <img class="hero-image" src="{{MEDIA_URL}}images/hero3.webp">
+    </div>
+        <div class="col-12 d-block d-md-none">
+            <img class="hero-image" src="{{MEDIA_URL}}images/hero2.webp">
+        </div>
+</div>
+<div class="hero-overlay text-center">
+        <img class="hero-logo" src="{{MEDIA_URL}}logos/sport101_mob4.webp">
+        <h2 class="text-white hero-title"> INNOVATE <strong class="text-cyan">|</strong> PERFORM <strong class="text-cyan">|</strong> ACHIEVE</h2>
+</div>
+<div class="container py-5">
+    <p class="my-5 mx-auto story-101">
+        Sport101 was founded with one thing in mind – to help athletes and coaches to reach their full potential. It’s that simple.
+        <br>
+        <br>
+        We too are athletes and coaches and over the years we have experienced some of the very best coaching, and some of the worst. This is what motivates us to be better…better than we were yesterday and better than anyone else.
+    </p>
+    <div class="text-center">
+        <button class="bg-cyan button mb-5" href="#"> <h5 class="mx-1 mt-1"><strong>Our Story</strong></h5></button>
+    </div>
+    <div class="row">
+        <div class="col-12 text-center mt-5">
+            <img class="young-minds-ad" src="{{MEDIA_URL}}logos/YoungMindsLogo1.webp"/>
+            <div class="young-minds-bg"></div>
+        </div>
+        
+    </div>
+    
+    
+</div>
 {% endblock%}
 

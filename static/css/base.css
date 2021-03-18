@@ -1,6 +1,7 @@
 
 body{
 font-family: 'Poppins', sans-serif;
+max-width: 100vw;
 }
 
 
@@ -8,6 +9,10 @@ font-family: 'Poppins', sans-serif;
 .logo{
     width:76px;
     height: auto;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    padding:0;
 }
 
 .young-minds-logo{
@@ -41,6 +46,25 @@ a:hover{
     font-size: 18px;
     word-wrap: normal;
 }
+
+.button{
+    border: 0 solid transparent;
+    border-radius: 30px;
+    background-color: rgb(71,218,202);
+    padding: 10px 15px;
+    color: black;
+    transition-timing-function: ease-in-out;
+}
+
+.button:hover{
+    color: white;
+    background-color: black;
+    
+}
+
+/*  -------------------- Colors   ---------------- */
+
+
 .text-cyan{
     color: rgb(71,218,202); 
 }
@@ -104,9 +128,45 @@ a:hover{
   font-size: 60px;
 }
 
-
 .container{
-    height: 100vh;
+    width: 75%;
+}
+/* --------------------------- Home PAGE --------------*/
+
+.hero-image{
+    width: 100vw;
+    height: auto;
+}
+
+.hero-title{
+    width:100%;
+    font-size: 1.5rem;
+}
+.hero-overlay{
+    position: absolute;
+    max-width: 100vw;
+    top: 450px;
+    z-index: 7;
+}
+
+.young-minds-ad{
+    width: 75%;
+    height: auto;
+    z-index: 5;
+}
+
+.young-minds-bg{
+    background-color: rgb(71,218,202);
+    width: 45%;
+    height: 75px;
+    position: absolute;
+    left: 15px;
+    top: -20px;
+    z-index: -1;
+}
+
+.story-101{
+    width: 90%;
 }
 
 /* --------------------------- MEDIA QUERIES --------------*/
@@ -115,19 +175,55 @@ a:hover{
     .young-minds-logo{
     width: 100px;
     height: auto;
-}
+    }
+    .hero-title{
+        white-space: nowrap;
+        font-size: 2rem;
+    }
+    
 }
 
-/* Medium devices (tablets, 768px and up) 
-@media (min-width: 768px) { }*/
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .hero-image{
+        width: 33.3vw;
+        height:822px;
+    }
+    .hero-overlay{
+            top: 500px;
+            width:100%;
+        }
+    .container{
+        width: 90%
+    }
+
+    .young-minds-bg{
+        height: 140px;
+        left: 45px;
+        top: -45px;
+    }
+
+    .story-101{
+        width: 60%;
+    }
+}
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+    
+
     .young-minds-logo{
     width: 120px;
     height: auto;
     }
+    .young-minds-bg{
+        height: 244px;
+    }
  }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    .young-minds-bg{
+        height: 321px;
+    }
+ }

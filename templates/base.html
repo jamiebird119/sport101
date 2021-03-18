@@ -39,14 +39,14 @@
         <div class="row no-gutters justify-content-center w-100">
             <div class="col-xl-1 d-none d-xl-inline-block text-center">
                 <a class="navbar-brand mt-4 pt-4 ml-1">
-                    <img class="young-minds-logo" src="{{ MEDIA_URL }}logos/YoungMindsLogo.webp">
+                    <img class="young-minds-logo" src="{{ MEDIA_URL }}logos/YoungMindsLogo1.webp">
                 </a>
             </div>
             <div class="d-none d-md-inline-block col-xl-10 text-center">
-                <div class="row">
+                <div class="row no-gutters">
                     <div class="col-md-4 d-none d-md-block d-lg-none">
                         <a class="navbar-brand mt-4">
-                            <img class="young-minds-logo" src="{{ MEDIA_URL }}logos/YoungMindsLogo.webp">
+                            <img class="young-minds-logo" src="{{ MEDIA_URL }}logos/YoungMindsLogo1.webp">
                     </a>
                     </div>
                     <div class="col-12 col-md-4 col-lg-12 text-center">
@@ -58,7 +58,7 @@
                         <a class="navbar-brand mt-4 text-cyan" href="#"><i class="text-black fas fa-user-circle"></i> Log In </a>
                     </div>
                     <div class="col-12">
-                        <ul class="nav justify-content-center list-unstyled mb-2 d-none d-md-flex">
+                        <ul class="nav justify-content-center list-unstyled mb-2 d-none d-md-flex w-100">
                             <li class="nav-item  mx-auto">
                                 <a class="nav-link text-black" href="#"><strong>2021 Acadamies</strong> </a>
                             </li>
@@ -90,11 +90,11 @@
         </div>
     </nav>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light d-md-none d-block">
-        <div class="row w-100 mx-auto">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-md-none d-block w-100">
+        <div class="row mx-auto no-gutters">
             <div class="col-4 text-center">
                 <a class="navbar-brand mt-3">
-                    <img class="young-minds-logo" src="{{ MEDIA_URL }}logos/YoungMindsLogo.webp">
+                    <img class="young-minds-logo" src="{{ MEDIA_URL }}logos/YoungMindsLogo1.webp">
                 </a>
             </div>
             <div class="col-4 text-center">
@@ -171,10 +171,10 @@
     {% block page_header %}
     {% endblock %}
 
-    <div class="container">
-        {% block content %}
-        {% endblock %}
-    </div>
+    
+    {% block content %}
+    {% endblock %}
+   
     <footer>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="row w-100 mt-4 mx-auto">
