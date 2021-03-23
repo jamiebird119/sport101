@@ -158,8 +158,8 @@ a:hover{
 }
 
 .hero-contact{
-    width: 60%;
-    height: 549px;
+    width: 100%;
+    height: auto;
     z-index: -1;
 }
 
@@ -231,7 +231,10 @@ a:hover{
     .container{
         width: 80%
     }
-
+    .hero-contact{
+        width: 60%;
+        height: 549px;
+    }
     .young-minds-bg{
         height: 140px;
         left: 45px;
