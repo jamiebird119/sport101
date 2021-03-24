@@ -111,9 +111,10 @@
         <img class="hero-contact" src="{{MEDIA_URL}}images/hero4.webp">
     </div>
 
-    <div class="contact-form bg-grey col-12 col-md-5 mx-auto">
+    <div class="contact-form bg-grey col-12 col-lg-5 mx-auto">
         <h2 class="text-cyan text-center my-5"><strong>Contact Us</strong></h2>
         <form method="POST" href="{% url 'home'%}">
+            {% csrf_token %}
             {% if form %}
             <div class="row mx-auto no-gutters">
                 {% for field in form %}
@@ -128,7 +129,7 @@
                 </div>
                 {% endfor %}
             <div class="col-12 text-center">
-                <button class="bg-cyan button my-4" type="submit">Send! <i class="fas fa-arrow-right"></i></button>
+                <button class="bg-cyan button my-4" type="submit"><strong>Send! <i class="fas fa-arrow-right"></i> </strong></button>
             </div>
             </div>
             {% endif %}
